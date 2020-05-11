@@ -32,9 +32,9 @@ def tableaudashboard():
 def machinelearning():
     return render_template("machinelearning.html")
 
-@app.route("/sentimentanalysiss")
-def sentimentanalysis():
-    return render_template("sentimentanalysis.html")
+@app.route("/sentiment")
+def sentiment():
+    return render_template("sentiment.html")
 
 @app.route("/team")
 def team():
