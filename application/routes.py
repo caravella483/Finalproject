@@ -1,4 +1,4 @@
-from application import app
+from Finalproject.application import app
 from flask import render_template
 from flask import url_for
 import pandas as pd
@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import datetime as dt
 import json
-import csv
+import csv 
 import psycopg2
 from sqlalchemy import create_engine
 from config import dbusername, dbpassword
@@ -31,6 +31,10 @@ def tableaudashboard():
 @app.route("/machinelearning")
 def machinelearning():
     return render_template("machinelearning.html")
+
+@app.route("/sentiment")
+def sentiment():
+    return render_template("sentiment.html")
 
 @app.route("/team")
 def team():
